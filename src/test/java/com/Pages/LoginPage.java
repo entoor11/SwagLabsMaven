@@ -31,9 +31,9 @@ WebDriver pageDriver;
 	}
 	
 	public void LoginFunction(String UserNameVal,String PwdVal) throws InterruptedException {	
-		userName.sendKeys(UserNameVal);Thread.sleep(3000);		
-		password.sendKeys(PwdVal);	Thread.sleep(3000);
-		loginBtn.click();Thread.sleep(3000);
+		userName.sendKeys(UserNameVal);
+		password.sendKeys(PwdVal);	
+		loginBtn.click();
 		
 	}
 

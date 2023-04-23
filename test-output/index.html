@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\anith\AppData\Local\Temp\testng-eclipse-116149463\testng-customsuite.xml</span>
+                    <span>C:\Users\anith\AppData\Local\Temp\testng-eclipse-823965377\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -143,15 +143,14 @@
                   </a> <!-- invalid(public void com.testcases.LoginTestCase.invalid(java.lang.reflect.Method) throws com.codoid.products...) -->
                   <span class="method-name">invalid</span>
                   <span class="parameters">(public void com.testcases.LoginTestCase.invalid(java.lang.reflect.Method) throws com.codoid.products.exception.FilloException,java.lang.InterruptedException)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;errorqqq&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ANEETHA&apos;, ip: &apos;192.168.50.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\anith\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fafb626dcda1e1af97664a517990eb38
-*** Element info: {Using=xpath, value=//h3[@data-test=&apos;errorqqq&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\anith\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55011}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc5b7ded78d0d181271cc6ce1b57f25f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -163,11 +162,9 @@ Session ID: fafb626dcda1e1af97664a517990eb38
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.testcases.LoginTestCase.invalid(LoginTestCase.java:58)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at com.testcases.LoginTestCase.invalid(LoginTestCase.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -218,7 +215,7 @@ Session ID: fafb626dcda1e1af97664a517990eb38
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\anith\AppData\Local\Temp\testng-eclipse-116149463\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\anith\AppData\Local\Temp\testng-eclipse-823965377\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -271,16 +268,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'valid')
 data.setCell(0, 2, 'com.testcases.LoginTestCase')
-data.setCell(0, 3, 17612);
+data.setCell(0, 3, 8266);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'invalid')
 data.setCell(1, 2, 'com.testcases.LoginTestCase')
-data.setCell(1, 3, 12524);
+data.setCell(1, 3, 5300);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -313,33 +310,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(public void com.testcases.LoginTestCase.invalid(java.lang.reflect.Method) throws com.codoid.products...)</span>
-                <span class="method-start">814 ms</span>
+                <span class="method-start">351 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invalid(public void com.testcases.LoginTestCase.invalid(java.lang.reflect.Method) throws com.codoid.products...)</span>
-                <span class="method-start">2524 ms</span>
+                <span class="method-start">1963 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">15052 ms</span>
+                <span class="method-start">7273 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(public void com.testcases.LoginTestCase.valid(java.lang.reflect.Method) throws com.codoid.products.e...)</span>
-                <span class="method-start">15344 ms</span>
+                <span class="method-start">7341 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">valid(public void com.testcases.LoginTestCase.valid(java.lang.reflect.Method) throws com.codoid.products.e...)</span>
-                <span class="method-start">16651 ms</span>
+                <span class="method-start">8485 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">34265 ms</span>
+                <span class="method-start">16757 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">ReportClean</span>
-                <span class="method-start">34735 ms</span>
+                <span class="method-start">16873 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

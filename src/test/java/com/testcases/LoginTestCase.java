@@ -59,7 +59,7 @@ public class LoginTestCase extends BaseClass {
 		Thread.sleep(5000);
 		String ActError = error.getText();
 		String ExpError = "Epic sadface: Username and password do not match any user in this service";
-		Thread.sleep(3000);
+		
 		
 		System.out.println("The Actual Message:"+ActError);
 		Assert.assertEquals(ActError, ExpError);		
